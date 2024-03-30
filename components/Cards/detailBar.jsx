@@ -16,8 +16,8 @@ export default function RootLayout( props ) {
         </div>
         <div className="flex-col justify-space-around mt-2 ml-3 w-[30%]"style={{fontSize:"0.8rem"}}>
               {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, vel dolorum libero voluptates reprehenderit */}
-              <label htmlFor="myInput">Comments:</label><br/>
-              <input type="text" id="myInput" className="w-[90%] h-[70%] pl-1 pt-1" />
+              <label >Comments:</label><br/>
+              <h2 className="w-[90%] h-[70%] pl-1 pt-1" >{props.comment}</h2>
       </div>
         <div className="flex translate-x-[-4%] mt-[10.5vh] z-10 m-auto" style={{zIndex:"10"}}>
           <button className="bg-peela hover:duration-100 hover:bg-halka-peela mr-2 rounded-md duration-250" onClick={props.handleEdit}>Edit</button>

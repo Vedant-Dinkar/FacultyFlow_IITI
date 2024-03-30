@@ -16,8 +16,7 @@ export default function RootLayout({ children }) {
     const [open, setOpen] = useState(false);
 
     return (
-        <motion.div  
-      >
+        <motion.div>
             {open ? <Chatbot floating={true}/> : null}
             <button onClick = {() => setOpen(!open)}><FF isOpen={open} /></button>
         </motion.div>

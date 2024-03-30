@@ -39,13 +39,13 @@ export default function RootLayout({ children }) {
         <br className="max-md:hidden" />
         <span className="orange_gradient text-center">{session.user.name}</span>!
       </h1>
-      <p className="desc text-center">
+      <section className="desc text-center">
         Faculty Flow is a user-friendly data manager tool.<br />
         Have an event to add? <span className="font-bold">Flow</span> it!
-      </p>
+      </section>
     </>
     }
-    <div className=" flex flex-row ">
+    <div className=" flex flex-row" style={{position:"relative",bottom:"-5vw"}}>
     <div data-toggle="modal" data-target="#exampleModalLong">
       <Link href = "/Travel">
         <Card
